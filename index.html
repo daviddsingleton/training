@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hi David</title>
+    <title>Hi Hannah</title>
+    <script>
+        function saySomething() {
+            var text = document.getElementById("something").value;
+            alert(text);
+        }
+    </script>
 </head>
 <body>
+
+<div>
+    <span>
+        Type Something <input id="something" placeholder="type something here" />
+    </span>
+</div>
+<div>
+    <input type="button" onclick="saySomething()" value="Click Me" />
+</div>
 
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Hi Hannah</title>
+    <script src="scripts.js"></script>
     <script>
         function saySomething() {
             var text = document.getElementById("something").value;
@@ -19,6 +20,11 @@
 </div>
 <div>
     <input type="button" onclick="saySomething()" value="Click Me" />
+    <input
+        type="button"
+        onclick="aBetterWay(document.getElementById('something').value)"
+        value="Click Me2"
+    />
 </div>
 
 </body>
